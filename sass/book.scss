@@ -2,6 +2,14 @@
 
 @import "normalize";
 
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-slab-v16-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-slab-v16-latin-regular.woff') format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,9 +24,8 @@ body, html {
 
 body {
   text-rendering: optimizeLegibility;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 
@@ -34,7 +41,7 @@ body {
    }
 }
 
-$sidebar-width: 300px;
+$sidebar-width: 360px;
 
 @import "navigation";
 @import "content";

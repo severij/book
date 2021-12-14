@@ -1,10 +1,18 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-mono-v13-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-mono-v13-latin-regular.woff') format('woff');
+}
+
 .page {
   position: absolute;
   width: calc(100% - #{$sidebar-width});
   height: 100%;
   overflow-y: auto;
-  color: #000;
-  background: #fff;
+  color: #564839;
+  background: #f5f2f0;
   padding-bottom: 20px;
   transition: 0.5s;
 
@@ -25,7 +33,7 @@
 
   &__content {
     a {
-      color: #4183c4;
+      color: #e85d00;
       text-decoration: none;
 
       &:hover {
@@ -65,12 +73,12 @@
     code {
       display: inline-block;
       vertical-align: middle;
-      padding: 0.1em 0.3em;
+      padding: 0 0.3em;
       border-radius: 3px;
-      color: #6e6b5e;
-      background: #f1f1f1;
-      font-size: 0.875em;
-      font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+      color: #564839;
+      background: #ebe6e0;
+      font-size: 2rem;
+      font-family: "Roboto Mono", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
     }
 
     iframe {
@@ -96,18 +104,18 @@
       }
     }
 
-    font-size: 1.6rem;
+    font-size: 2rem;
     word-wrap: break-word;
     line-height: 1.7;
     position: relative;
     left: 0;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 15px 40px;
 
     p {
       margin-top: 0;
-      margin-bottom: 0.85em;
+      margin-bottom: 2rem;
     }
   }
 
